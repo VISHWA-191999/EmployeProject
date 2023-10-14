@@ -1,0 +1,47 @@
+<div class="container-fluid mb-5">
+
+<h2> Emplyee Details</h2>
+
+<form  >
+
+    <!-- {{user.value | json}} -->
+
+    <div class="form-control">
+
+        <label for="ename">Emplyee Name :</label>
+        <input type="text"  id="ename" [(ngModel)]="empName"  name="empName">
+
+    </div>
+    <br>
+
+    <div class="form-control">
+
+        <label for="role">Designation :</label>
+        <input type="text"  id="role" name="Designation" [(ngModel)]="designation">
+
+    </div>
+    <br>
+
+    <div class="form-control">
+        <label for="dept">Department :</label>
+        <input type="text"  id="dept" name="dept" [(ngModel)]="dept">
+
+    </div><br>
+
+    <div class="form-control">
+        <label for="sal">Salary :</label>
+        <input type="text"  id="sal" name="salary" [(ngModel)]="salary">
+
+    </div>
+<br>
+    <div class="form-control">
+        <button type="Submit" (click)="onSubmit()">Submit</button>
+    </div>
+
+
+
+
+
+
+</form>
+</div>

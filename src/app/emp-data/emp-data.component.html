@@ -1,0 +1,54 @@
+<div class="container-fluid mb-5">
+
+    <h2 style="color: cornflowerblue;"> Emplyee Data :</h2>
+    
+    <form  (ngSubmit)="datasubmit()" >
+    
+        <!-- {{user.value | json}} -->
+    
+        <div class="form-control">
+    
+            <label for="ename">Emplyee Name :</label>
+            <input type="text"  id="ename" [(ngModel)]="eName"  name="eName">
+    
+        </div>
+        <br>
+    
+        <div class="form-control">
+    
+            <label for="email">Email :</label>
+            <input type="text"  id="email" name="email" [(ngModel)]="email">
+    
+        </div>
+        <br>
+    
+        <div class="form-control">
+            <label for="Contact">Contact No :</label>
+            <input type="text"  id="Contact" name="phNo" [(ngModel)]="phNo">
+    
+        </div><br>
+    
+        <div class="form-control">
+            <label for="dateOfBirth">DOB :</label>
+            <input type="text"  id="dateOfBirth" name="dob" [(ngModel)]="dob" placeholder="Enter ur date of birth">
+    
+        </div>
+
+        <div class="form-control">
+            <label for="doj">DOJ :</label>
+            <input type="text"  id="doj" name="dob" [(ngModel)]="doj" placeholder="Enter ur date of Joining">
+    
+        </div>
+    <br>
+        <div class="form-control" >
+            <button type="Submit" style="color: blue; " >Submit</button>
+        </div>
+    
+    
+    
+    
+    
+    
+    </form>
+    </div>
+    
